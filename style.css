@@ -136,3 +136,17 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+/* Style for required fields */
+form input:required,
+form select:required,
+form textarea:required {
+    border: 2px solid rgb(51, 50, 50);
+}
+
+/* Style for optional fields */
+form input:not(:required),
+form select:not(:required),
+form textarea:not(:required) {
+    border: 1px solid #ffffff;
+}
